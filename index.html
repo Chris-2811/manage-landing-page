@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="primary-header" id="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <img src="images/logo.svg" alt="manage logo" />
+          </div>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </button>
+          <nav
+            class="primary-navigation"
+            data-visible="false"
+            id="primary-navigation"
+          >
+            <ul class="nav-list" aria-label="Primary" role="list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn-primary">Get started</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container ">
+        <div class="even-columns">
+          <div><img src="images/illustration-intro.svg" alt="" /></div>
+          <div>
+            <h1 class="fs-900 ff-heading fw-bold text-primary-100">
+              Bring everyone together to build better products.
+            </h1>
+            <p class="text-primary-400">
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container  container--features">
+        <div class="even-columns">
+          <div class="flow">
+            <h2 class="ff-heading fs-700 text-primary-100 fw-bold">
+              What's different about manage?
+            </h2>
+            <p class="fs-400"> 
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams.
+            </p>
+          </div>
+
+          <div class="flow">
+            <div>
+              <div class="heading-container">
+                <span>01</span>
+                <h3 class="ff-heading fs-600 text-primary-100 fw-bold">
+                  Track company-wide progress
+                </h3>
+              </div>
+              <p  class="fs-400">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+            <div>
+              <div class="heading-container">
+                <span>02</span>
+                <h3 class="ff-heading fs-600 text-primary-100 fw-bold">
+                  Advanced built-in reports
+                </h3>
+              </div>
+              <p class="fs-400" >
+                Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+            <div>
+              <div class="heading-container">
+                <span>03</span>
+                <h3 class="ff-heading fs-600 text-primary-100 fw-bold">
+                  Everything you need in one place
+                </h3>
+              </div>
+              <p>
+                Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel">
+      <h2 class="ff-heading fs-700 text-primary-100 fw-bold">
+        What they've said
+      </h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/avatar-anisha.png" alt="" class="avatar" />
+            <div class="swiper-content">
+              <h3 class="ff-heading">Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-ali.png" alt="" class="avatar" />
+            <div class="swiper-content">
+              <h3 class="ff-heading">Ali Bravo</h3>
+              <p>
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-richard.png" alt="" class="avatar" />
+            <div class="swiper-content">
+              <h3 class="ff-heading">Richard Watss</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-shanai.png" alt="" class="avatar" />
+            <div class="swiper-content">
+              <h3>Shanai Gough</h3>
+              <p>
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <button class="btn btn-primary">Get Started</button>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-container">
+          <h2 class="ff-heading fs-800 fw-semi-bold text-neutral-100">
+            Simplify how your team workds today
+          </h2>
+          <button class="btn btn-secondary">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <div class="logo-footer">
+              <img src="images/logo-white.svg" alt="manage logo" />
+            </div>
+            <div class="socials" >
+              <a href="https://www.facebook.com/" target="_blank" aria-label="facebook">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/" target="_blank"  ><svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+              </svg></a>
+              
+              </a>
+              <a href="https://twitter.com/?lang=de" target="_blank">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.pinterest.de/" target="_blank"
+                ><svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav>
+            <ul class="footer-navigation" role="list">
+              <div class="flow" style="--flow-space: 0.75rem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+              </div>
+              <div class="flow" style="--flow-space: 0.75rem">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </div>
+            </ul>
+          </nav>
+
+          <div>
+            <form class="form" id="form">
+              <div class="form-control">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Updates in your inbox..."
+                />
+                <button class="btn btn-primary">Go</button>
+                <small class="message"></small>
+              </div>
+
+              <p class="copyright">Copyright 2020. All Rights Reserved</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
