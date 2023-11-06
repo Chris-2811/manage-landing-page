@@ -56,9 +56,13 @@ form.addEventListener('submit', (e) => {
 
 function initSwiper() {
   const swiper = new Swiper('.swiper', {
+    autoHeight: true,
+    loop: true,
+    grabCursor: true,
     modules: [Navigation, Pagination],
     pagination: {
       el: '.swiper-pagination',
+      pagination: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
