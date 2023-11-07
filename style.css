@@ -503,11 +503,14 @@ a {
 
 /* primary header */
 
+.primary-header {
+  padding-top: 4.5rem;
+}
+
 .nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2.75rem;
 }
 
 .nav-list {
@@ -518,7 +521,7 @@ a {
 
 .nav-list > * a {
   color: var(--clr-primary-100);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
 }
 
 .nav-list > *:hover a {
@@ -536,6 +539,10 @@ a {
 }
 
 @media (max-width: 1020px) {
+  .primary-header {
+    padding-top: 2.75rem;
+  }
+
   .primary-navigation {
     display: none;
     position: fixed;
@@ -615,13 +622,12 @@ a {
 
 .hero {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   position: relative;
 }
 
 .hero .even-columns > div:last-child {
   align-self: center;
-  padding-bottom: 1rem;
 }
 
 .hero h1 {
@@ -798,7 +804,7 @@ a {
   padding: 0.75rem 3rem 0.75rem 1.5rem;
   border-radius: 30px;
   border: none;
-  font-size: 13px;
+  font-size: 0.815rem;
 }
 
 .footer .form-control input:focus {
@@ -837,6 +843,7 @@ a {
 
 form .btn {
   box-shadow: none;
+  padding-inline: 1.5rem;
 }
 
 @media (max-width: 375px) {
@@ -858,12 +865,13 @@ form .btn {
 @media (min-width: 1020px) {
   .hero {
     text-align: left;
-    padding-top: 7.6875rem;
+    margin-top: 7.6875rem;
   }
 
   .hero p {
     max-width: 350px;
     margin-inline: 0;
+    margin-block: 1rem 2.5rem;
   }
 
   .hero .even-columns > div:nth-child(1) {
@@ -871,7 +879,7 @@ form .btn {
   }
 
   .features {
-    margin-top: 8.25rem;
+    margin-top: 7.25rem;
     text-align: left;
   }
 
@@ -942,8 +950,9 @@ form .btn {
     padding-block: 4rem;
   }
 
-  .footer .even-columns {
+  .footer .even-columns--footer {
     gap: 1rem;
+    grid-template-columns: 290px 2fr 1fr;
   }
 
   .footer .even-columns > div:first-child {
@@ -957,6 +966,10 @@ form .btn {
   .footer .even-columns > div:last-child {
     order: 1;
     justify-self: end;
+  }
+
+  .footer-navigation {
+    gap: clamp(5rem, 10vw, 12rem);
   }
 
   .copyright {
@@ -979,6 +992,11 @@ form .btn {
     margin-right: auto;
   }
 
+  .footer .socials {
+    gap: 1rem;
+    margin-right: auto;
+  }
+
   .footer .social-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -986,6 +1004,10 @@ form .btn {
 
   .footer nav {
     justify-self: start;
+  }
+
+  .footer .form-control input {
+    padding: 0.75rem 3rem 0.75rem 1.5rem;
   }
 
   @media (min-width: 1440px) {
