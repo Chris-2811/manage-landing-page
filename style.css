@@ -504,7 +504,7 @@ a {
 /* primary header */
 
 .primary-header {
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
 }
 
 .nav-wrapper {
@@ -798,6 +798,11 @@ a {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  font-size: 0.8125rem;
+}
+
+.footer .form {
+  height: 100%;
 }
 
 .footer .form-control input {
@@ -969,7 +974,7 @@ form .btn {
   }
 
   .footer-navigation {
-    gap: clamp(5rem, 10vw, 12rem);
+    gap: clamp(5rem, 13vw, 12rem);
   }
 
   .copyright {
@@ -981,11 +986,10 @@ form .btn {
   .form {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
     .container--features {
       padding-inline: 1.5rem;
     }
-    gap: 4rem;
   }
 
   .logo-footer {
@@ -1007,7 +1011,8 @@ form .btn {
   }
 
   .footer .form-control input {
-    padding: 0.75rem 3rem 0.75rem 1.5rem;
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    width: 200px;
   }
 
   @media (min-width: 1440px) {
